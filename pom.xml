@@ -14,7 +14,7 @@
 	<name>aad-oauth-spring-boot</name>
 	<description>Azure Active Directory OAuth example with Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 		<spring-cloud-azure.version>4.0.0</spring-cloud-azure.version>
 	</properties>
 	<dependencyManagement>
@@ -29,6 +29,11 @@
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.7.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

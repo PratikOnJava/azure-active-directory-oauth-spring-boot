@@ -24,6 +24,6 @@ public class MySuccessHandler implements AuthenticationSuccessHandler {
     log.info("Authorities: {}", oauth2User.getAuthorities());
     log.info("Attributes: {}", oauth2User.getAttributes());
 
-    response.sendRedirect("/admin");
+    response.sendRedirect("/swagger-ui-custom.html");
   }
 }
